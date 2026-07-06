@@ -2,6 +2,7 @@
   "name": "x-shot",
   "version": "1.0.0",
   "description": "CLI to capture X/Twitter posts as Instagram-ready portrait screenshots",
+  "author": "SaeedPoureshghi (https://github.com/SaeedPoureshghi)",
   "type": "module",
   "bin": {
     "xshot": "./bin/xshot.js"
@@ -28,6 +29,14 @@
     "puppeteer",
     "social-media"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaeedPoureshghi/x-shot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SaeedPoureshghi/x-shot/issues"
+  },
+  "homepage": "https://github.com/SaeedPoureshghi/x-shot#readme",
   "license": "MIT",
   "dependencies": {
     "puppeteer": "^24.2.0"
