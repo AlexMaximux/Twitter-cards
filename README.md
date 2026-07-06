@@ -1,0 +1,59 @@
+# xshot
+
+Capture X/Twitter posts as Instagram-ready portrait screenshots from the command line.
+
+## Install
+
+```bash
+npm install -g x-shot
+```
+
+Or run without installing globally:
+
+```bash
+npx x-shot "https://x.com/user/status/123456789"
+```
+
+## Usage
+
+```bash
+xshot "https://x.com/user/status/123456789"
+xshot -u "https://x.com/user/status/123" -f post -o my-tweet.png
+xshot "https://x.com/user/status/123" --stats
+```
+
+### Options
+
+| Flag | Description |
+|------|-------------|
+| `-u, --url <url>` | Tweet URL (required if not passed as first argument) |
+| `-f, --format story\|post` | Output size: `story` (1080×1920) or `post` (1080×1350). Default: `story` |
+| `-o, --output <path>` | Output PNG path. Default: `tweet-<format>.png` in current directory |
+| `--no-stats` | Hide likes, replies, and action buttons (**default**) |
+| `--stats` | Show engagement stats and action buttons |
+| `--html <path>` | Custom HTML template |
+| `-h, --help` | Show help |
+| `-V, --version` | Show version |
+
+## Formats
+
+- **story** — 1080×1920 (9:16) for Instagram Stories / Reels
+- **post** — 1080×1350 (4:5) for Instagram portrait feed posts
+
+## Requirements
+
+- Node.js 18+
+- Internet connection (loads the tweet embed from X)
+
+## Publish
+
+```bash
+npm login
+npm publish
+```
+
+If the package name `x-shot` is taken on npm, update the `name` field in `package.json` before publishing.
+
+## License
+
+MIT

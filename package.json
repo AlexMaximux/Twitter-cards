@@ -1,0 +1,35 @@
+{
+  "name": "x-shot",
+  "version": "1.0.0",
+  "description": "CLI to capture X/Twitter posts as Instagram-ready portrait screenshots",
+  "type": "module",
+  "bin": {
+    "xshot": "./bin/xshot.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "assets"
+  ],
+  "scripts": {
+    "start": "node bin/xshot.js",
+    "test": "node bin/xshot.js --help"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "x",
+    "twitter",
+    "tweet",
+    "screenshot",
+    "instagram",
+    "cli",
+    "puppeteer",
+    "social-media"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^24.2.0"
+  }
+}
