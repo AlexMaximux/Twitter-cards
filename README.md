@@ -5,13 +5,13 @@ Capture X/Twitter posts as Instagram-ready portrait screenshots from the command
 ## Install
 
 ```bash
-npm install -g x-shot
+npm install -g @saeedalone/x-shot
 ```
 
 Or run without installing globally:
 
 ```bash
-npx x-shot "https://x.com/user/status/123456789"
+npx @saeedalone/x-shot "https://x.com/user/status/123456789"
 ```
 
 ## Usage
@@ -49,10 +49,10 @@ xshot "https://x.com/user/status/123" --stats
 
 ```bash
 npm login
-npm publish
+npm publish --access public
 ```
 
-If the package name `x-shot` is taken on npm, update the `name` field in `package.json` before publishing.
+Scoped packages (`@saeedalone/x-shot`) must be published with `--access public` to be installable by anyone.
 
 ## License
 

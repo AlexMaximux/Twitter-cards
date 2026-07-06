@@ -1,5 +1,5 @@
 {
-  "name": "x-shot",
+  "name": "@saeedalone/x-shot",
   "version": "1.0.0",
   "description": "CLI to capture X/Twitter posts as Instagram-ready portrait screenshots",
   "author": "SaeedPoureshghi (https://github.com/SaeedPoureshghi)",
