@@ -28,7 +28,9 @@ xshot "https://x.com/user/status/123" --stats
 |------|-------------|
 | `-u, --url <url>` | Tweet URL (required if not passed as first argument) |
 | `-f, --format story\|post` | Output size: `story` (1080×1920) or `post` (1080×1350). Default: `story` |
-| `-o, --output <path>` | Output PNG path. Default: `tweet-<format>.png` in current directory |
+| `-o, --output <path>` | Output path. Default: `<post-id>.<png\|mp4>` in current directory |
+| `-b, --background <path>` | Custom background image path (replaces gradient, renders at 15% opacity) |
+| `-s, --scale, --size <val>` | Scale multiplier of tweet card (e.g. `2x`, `2`, `0.8`). Default: `1.5` |
 | `--no-stats` | Hide likes, replies, and action buttons (**default**) |
 | `--stats` | Show engagement stats and action buttons |
 | `--html <path>` | Custom HTML template |

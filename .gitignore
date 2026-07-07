@@ -1,4 +1,7 @@
 node_modules/
 *.png
+*.mp4
+*.jpeg
+*.jpg
 *.log
 .DS_Store
