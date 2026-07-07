@@ -13,6 +13,8 @@ Or run without installing globally:
 ```bash
 npx @saeedalone/x-shot "https://x.com/user/status/123456789"
 ```
+'''New 
+node bin/xshot.js "https://x.com/vakilipor/status/2073889656005878009" -b ./assets/1.jpeg -s 2.3x
 
 ## Usage
 
