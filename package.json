@@ -14,6 +14,7 @@
   ],
   "scripts": {
     "start": "node bin/xshot.js",
+    "server": "node lib/server.js",
     "test": "node bin/xshot.js --help"
   },
   "engines": {

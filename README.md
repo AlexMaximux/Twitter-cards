@@ -44,6 +44,39 @@ xshot "https://x.com/user/status/123" --stats
 - **story** — 1080×1920 (9:16) for Instagram Stories / Reels
 - **post** — 1080×1350 (4:5) for Instagram portrait feed posts
 
+## API Server
+
+You can run `xshot` as a remote HTTP API server.
+
+### Start the Server
+
+```bash
+# Start server on default port 3000
+npm run server
+
+# Start server on a custom port
+PORT=8080 npm run server
+```
+
+### API Endpoint
+
+**`POST /api/capture`**
+
+Exposes a JSON rendering endpoint. Send options in the JSON body, and the server will stream back the compiled binary file (`image/png` or `video/mp4`).
+
+**Payload format:**
+```json
+{
+  "url": "https://x.com/mistergeezy/status/2073749321414000764",
+  "format": "story",
+  "scale": 1.5,
+  "hideStats": true,
+  "background": "data:image/png;base64,iVBORw0KGgoAAA..."
+}
+```
+
+*Note: The `background` parameter is optional and accepts a Base64 data URL string for custom background overlays.*
+
 ## Requirements
 
 - Node.js 18+
