@@ -40,6 +40,8 @@
   "homepage": "https://github.com/SaeedPoureshghi/x-shot#readme",
   "license": "MIT",
   "dependencies": {
+    "@google/genai": "^2.10.0",
+    "mime": "^4.1.0",
     "puppeteer": "^24.2.0"
   }
 }
