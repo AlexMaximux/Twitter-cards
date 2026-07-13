@@ -1,0 +1,17 @@
+{
+  "background": "./assets/ghooghnoos.jpeg",
+  "endVideo": "./assets/End-Ghogh.mp4",
+  "scale": 2.3,
+  "hideStats": true,
+  "complex": true,
+  "complexConfig": {
+    "setpts": "0.99*PTS",
+    "crop": "iw*0.65:ih*0.65",
+    "noise": "alls=2:allf=t",
+    "eq": "gamma=1.04:saturation=1.05",
+    "scale": "935:-2",
+    "overlay": "(W-w)/2:(H-h)/2",
+    "atempo": "1.01",
+    "aresample": "48000"
+  }
+}
