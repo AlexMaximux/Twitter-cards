@@ -4,6 +4,7 @@
   "scale": 2.3,
   "hideStats": true,
   "complex": true,
+  "noTts": true,
   "complexConfig": {
     "setpts": "0.99*PTS",
     "crop": "iw*0.65:ih*0.65",
