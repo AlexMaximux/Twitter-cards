@@ -1,5 +1,9 @@
 {
   "background": "./assets/ghooghnoos.jpeg",
+  "backgroundColor": null,
+  "fontColor": "#ffffff",
+  "textBackgroundColor": "rgba(0, 0, 0, 0.5)",
+  "hook": true,
   "endVideo": "./assets/End-Ghogh.mp4",
   "scale": 2.3,
   "hideStats": true,

@@ -26,6 +26,12 @@ Captures a tweet as a styled screenshot (image) or an animated video based on pa
 | `complete` | `boolean` | `false` | Enable complete mode. Loads options from `complete.json` and concats an intro hook animation before the main video. |
 | `videoOnly` | `boolean` | `false` | Output only the tweet video on the background, omitting the tweet card. |
 | `endVideo` | `string` | `null` | Base64 encoded video or a local file path to append to the end of the final video. |
+| `textColor` | `string` | `"#ffffff"` | Custom font color for text animations / general text. |
+| `bgColor` | `string` | `null` | Custom background color/gradient for general text animations. |
+| `textBgColor` | `string` | `null` | Custom background color for the text container box (e.g. `rgba(0,0,0,0.5)`). |
+| `hookTextColor` | `string` | `null` | Custom font color specifically for the introductory hook video (defaults to `textColor`). |
+| `hookBgColor` | `string` | `null` | Custom background color specifically for the introductory hook video (defaults to `bgColor`). |
+| `hookTextBgColor` | `string` | `null` | Custom background color for the text container box specifically for the introductory hook video (defaults to `textBgColor`). |
 
 ### Responses
 
